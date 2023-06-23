@@ -1,24 +1,16 @@
-﻿//double num = Convert.ToDouble(Console.ReadLine);
-/*int first = Convert.ToInt32(Console.ReadLine());
-int second = Convert.ToInt32(Console.ReadLine());
-if (first == second * second) //before {} never goes ;
+﻿int a = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
+if (a > b)
 {
-Console.WriteLine("Yes");
+    Console.WriteLine ("max = " + a );
+    Console.WriteLine ("min = " + b);
 }
-else
+else if (a == b)
 {
-Console.WriteLine("No");
-}*/
-Console.Write("write number: ");
-
-int N = Convert.ToInt32(Console.ReadLine());
-if (N < 0)
-{
-    N = N * -1;
+    Console.WriteLine ("they are equal");
 }
-int negativeN = N * -1;
-while (negativeN <= N)
+else 
 {
-    Console.WriteLine(negativeN);
-negativeN++;
+    Console.WriteLine ("max = " + b);
+    Console.WriteLine ("min = " + a);
 }
